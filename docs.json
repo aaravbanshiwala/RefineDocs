@@ -16,7 +16,7 @@
           {
             "group": "Phoenix",
             "pages": [
-              "Introduction",
+              "Phoenix/Introduction",
               "Permissions",
               "Placeholders"
             ]
