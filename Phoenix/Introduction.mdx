@@ -1,11 +1,6 @@
 ---
-sidebar_position: 1
+title: "Introduction - Phoenix"
 ---
-
-import Tabs from '@theme/Tabs'
-import TabItem from '@theme/TabItem'
-import Spigot from './installation/_spigot.mdx'
-import Proxy from './installation/_proxy.mdx'
 
 An advanced Network Core plugin that provides a plethora of features to enhance any server administration experience. Phoenix core is compatible with multiple plugins and comes with numerous free add-ons that expand features of Phoenix.
 
@@ -15,46 +10,45 @@ Phoenix is extremely customizable. The freedom to change messages, menus, settin
 
 ## Installation
 
-<Tabs queryString="type">
-    <TabItem value="spigot" label="Spigot / Paper" default>
-        <Spigot />
-    </TabItem>
-    <TabItem value="proxy" label="Velocity / Bungee">
-        <Proxy />
-    </TabItem>
+<Tabs>
+  <Tab title="Bungeecord/Velocity">
+    <Note>
+      Please Note:
+      Phoenix is still required on all of the spigot instances you want to use it on.
+    </Note>
+    1. Download and install pxVelocity/pxBungee, which can be found on our Discord, into your proxy's plugin folder.
+    2. Start your proxy and wait until it finishes booting up, once finished, shutdown your proxy.
+    3. Open global.yml in the newly created Phoenix plugin folder and enter your database details.
+    4. Start up your proxy again. If the database details are correct, Phoenix will load right up.
+  </Tab>
+  <Tab title="Spigot/Paper">
+    1. Download and install Retention, which can be found on the resource page, into your plugins folder.
+    2. Start your server and wait until it finishes booting up, once finished, stop your server.
+    3. Open global.yml in the newly created Phoenix plugin folder and enter your database details.
+    4. Start up your server again. If the database details are correct, Phoenix will load right up.
+  </Tab>
 </Tabs>
 
 ## FAQ
 
-:::tip
-Debug mode can be toggled using `/phoenix debug-mode`.
-:::
+<Info>
+  Debug mode can be toggled using `/phoenix debug-mode`
+</Info>
 
-<details>
-<summary>My menus are not working on 1.12+ servers. How do I fix?</summary>
+<AccordionGroup>
+  <Accordion title="My menus are not working on 1.12+ servers. How do I fix?">
+    Change `fill-glass` in `menus.yml` to something like `GRAY_STAINED_GLASS_PANE`, then restart.
+  </Accordion>
+  <Accordion title="I have a missing dependency error. Why am I getting this?">
+    You are missing a required dependency that Phoenix relies on, please ensure you have installed `PlaceholderAPI` on your server.
+  </Accordion>
+  <Accordion title="Why can’t I grant a rank even when I'm OP">
+    Please ensure you have `core.grant.*` or `core.grant.<rank>`, and your rank is above the rank you're trying to grant.
+  </Accordion>
+  <Accordion title="Why am I being blacklisted randomly when I op someone or I get opped?">
+    This is because you aren't a [security user](/Phoenix/Features/Security).\
+    Execute `/security add <player> [admin]` in console to fix this.
 
-Change `fill-glass` in `menus.yml` to something like `GRAY_STAINED_GLASS_PANE`, then restart.
-</details>
-
-<details>
-<summary>I have a missing dependency error. Why am I getting this?</summary>
-
-You are missing a required dependency that Phoenix relies on, please ensure you have all plugins listed below.
-
-- PlaceholderAPI
-</details>
-
-<details>
-<summary>Why can’t I grant a rank even when I'm OP?</summary>
-
-Please ensure you have `core.grant.*` or `core.grant.<rank>`, and your rank is above the rank you're trying to grant.
-</details>
-
-<details>
-<summary>Why am I being blacklisted randomly when I op someone or I get opped?</summary>
-
-This is because you arent a [security user](/Phoenix/Features/Security).
-Execute `/security add <player> [admin]` in console to fix this.
-
-You can also turn security off in config but it is highly recommended not to.
-</details>
+    You can also turn security off in config but it is highly recommended not to.
+  </Accordion>
+</AccordionGroup>
