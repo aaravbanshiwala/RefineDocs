@@ -16,13 +16,13 @@
           {
             "group": "Phoenix",
             "pages": [
-              "Introduction",
+              "Introduction.mdx",
               "Permissions",
               "Placeholders"
             ]
           },
           {
-            "group": "Customization",
+            "group": "CarbonSpigot",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
