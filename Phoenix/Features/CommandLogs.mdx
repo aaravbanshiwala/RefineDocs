@@ -1,0 +1,21 @@
+---
+sidebar_position: 13
+title: Command Logs
+---
+
+The command logs system provides an easy way to track players' executed command history.
+You can check the command logs of a specific player or of a whole server with a specified timeframe.
+
+:::warning
+Commands are only logged if they require a permission and if the player
+has that permission, meaning that the command executed correctly.
+:::
+
+## Commands
+
+`<>` = Required `[]` = Optional
+
+Command                               | Permission                 | Description
+------------------------------------- | -------------------------- | ----------------------------
+`/commandlogs player <player> [time]` | `core.command.commandlogs` | View a player's command logs.
+`/commandlogs server <server> [time]` | `core.command.commandlogs` | View a server's command logs.

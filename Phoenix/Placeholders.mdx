@@ -1,0 +1,85 @@
+---
+sidebar_position: 5
+---
+
+These are PlaceholderAPI placeholders and can be used in messages, menus, etc.
+They also let you display information in other plugins.
+
+## Phoenix
+
+These are the main phoenix placeholders, addon placeholders can be found below.
+
+### Player
+
+Placeholder                                       | Returns                                                | Example
+------------------------------------------------- | ------------------------------------------------------ | --------------------
+`%phoenix_player_rank%`                           | The player's highest rank's display name.              | `&b&lMVP`
+`%phoenix_player_rank_duration%`                  | The player's highest rank's duration.                  | `Permanent`
+`%phoenix_player_rank_color%`                     | The player's highest rank's color.                     | `&b`
+`%phoenix_player_rank_prefix%`                    | The player's highest rank's prefix.                    | `&b[MVP]`
+`%phoenix_player_rank_suffix%`                    | The player's highest rank's suffix.                    | `Suffix`
+`%phoenix_player_rank_playerlist_prefix%`         | The player's highest rank's tab prefix.                | `&b`
+`%phoenix_player_general_rank%`                   | The player's highest non-disguise rank's display name. | `&4&lOwner`
+`%phoenix_player_general_rank_duration%`          | The player's highest non-disguise rank's duration.     | `Permanent`
+`%phoenix_player_general_rank_color%`             | The player's highest non-disguise rank's color.        | `&4`
+`%phoenix_player_general_rank_prefix%`            | The player's highest rank's prefix.                    | `&4[OWNER]`
+`%phoenix_player_general_rank_suffix%`            | The player's highest rank's suffix.                    | `Suffix`
+`%phoenix_player_general_rank_playerlist_prefix%` | The player's highest rank's tab prefix.                | `&4`
+`%phoenix_player_tag%`                            | The player's active chat tag.                          | `&7[&cCool&7]`
+`%phoenix_player_name%`                           | The players' name, changes with disguises.             | `Notch`
+`%phoenix_player_hidingstaff%`                    | If the player is hiding staff members.                 | `true`/`false`
+`%phoenix_player_modmode%`                        | If the player is in mod mode.                          | `true`/`false`
+`%phoenix_player_vanished%`                       | If the player is vanished.                             | `Visible`/`Vanished`
+`%phoenix_player_level_name%`                     | The player's current level's name.                     | `&cI`
+`%phoenix_player_exp%`                            | The player's experience.                               | `0`
+
+### Server
+
+Placeholder                             | Returns                             | Example
+--------------------------------------- | ----------------------------------- | --------------
+`%phoenix_server_whitelisted_<server>%` | If a server is whitelisted          | `true`/`false`
+`%phoenix_server_displayname_<server>%` | A server's display name.            | `Practice`
+`%phoenix_server_online_<server>%`      | A server's player count.            | `23`
+`%phoenix_server_max_<server>%`         | A server's max player count.        | `100`
+`%phoenix_group_online_<group>%`        | A server group's player count.      | `142`
+`%phoenix_group_max_<group>%`           | A server groups's max player count. | `500`
+
+## Addons
+
+These are the placeholders for all of Phoenix's addons.
+
+:::info
+The addon need to be enabled in Retention for the corrosponding placeholders to function.
+:::
+
+### pxQueue
+
+Placeholder                 | Returns                                    | Example
+--------------------------- | ------------------------------------------ | ----------
+`%pxqueue_player_queue%`    | The current queue's display name.          | `Practice`
+`%pxqueue_player_position%` | The players position in the current queue. | `4`
+
+### pxCosmetics
+
+Placeholder                         | Returns                       | Example
+----------------------------------- | ----------------------------- | --------
+`%pxcosmetics_player_color%`        | A player's custom name color. | `&a`
+`%pxcosmetics_player_chat_color%`   | A player's custom chat color. | `&6`
+`%pxcosmetics_player_coins%`        | A player's coin balance.      | `250`
+`%pxcosmetics_player_kill_message%` | A player's kill message.      | `killed`
+
+### pxFriends
+
+Placeholder                  | Returns                         | Example
+---------------------------- | ------------------------------- | -------
+`%pxfriends_friends%`        | A player's friend count.        | `27`
+`%pxfriends_friends_online%` | A player's online friend count. | `4`
+
+### Quark
+
+Placeholder                      | Returns                      | Example
+-------------------------------- | ---------------------------- | ----------
+`%quark_server_status_<server>%` | A server's status.           | `&aOnline`
+`%quark_server_online_<server>%` | A servers's player count.    | `23`
+`%quark_server_max_<server>%`    | A server's max player count. | `100`
+

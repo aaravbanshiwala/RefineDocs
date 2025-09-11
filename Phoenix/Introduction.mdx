@@ -1,0 +1,60 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+import Spigot from './installation/_spigot.mdx'
+import Proxy from './installation/_proxy.mdx'
+
+An advanced Network Core plugin that provides a plethora of features to enhance any server administration experience. Phoenix core is compatible with multiple plugins and comes with numerous free add-ons that expand features of Phoenix.
+
+Its simple, its powerful and it gets the job done.
+
+Phoenix is extremely customizable. The freedom to change messages, menus, settings and more will allow Phoenix to fit in to your network seamlessly.
+
+## Installation
+
+<Tabs queryString="type">
+    <TabItem value="spigot" label="Spigot / Paper" default>
+        <Spigot />
+    </TabItem>
+    <TabItem value="proxy" label="Velocity / Bungee">
+        <Proxy />
+    </TabItem>
+</Tabs>
+
+## FAQ
+
+:::tip
+Debug mode can be toggled using `/phoenix debug-mode`.
+:::
+
+<details>
+<summary>My menus are not working on 1.12+ servers. How do I fix?</summary>
+
+Change `fill-glass` in `menus.yml` to something like `GRAY_STAINED_GLASS_PANE`, then restart.
+</details>
+
+<details>
+<summary>I have a missing dependency error. Why am I getting this?</summary>
+
+You are missing a required dependency that Phoenix relies on, please ensure you have all plugins listed below.
+
+- PlaceholderAPI
+</details>
+
+<details>
+<summary>Why can’t I grant a rank even when I'm OP?</summary>
+
+Please ensure you have `core.grant.*` or `core.grant.<rank>`, and your rank is above the rank you're trying to grant.
+</details>
+
+<details>
+<summary>Why am I being blacklisted randomly when I op someone or I get opped?</summary>
+
+This is because you arent a [security user](/Phoenix/Features/Security).
+Execute `/security add <player> [admin]` in console to fix this.
+
+You can also turn security off in config but it is highly recommended not to.
+</details>
