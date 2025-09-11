@@ -1,0 +1,41 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+Bolt is a unique practice core that adds exciting features such as various duels similar to those found on popular practice servers like MMC and Lunar. Whether you want to train and improve your skills or challenge other players in a competitive environment, Bolt is the perfect addition to your Phoenix network.
+
+:::warning
+The documentation for Bolt is actively being updated with new content, please be patient as we work on providing you with an updated wiki.
+:::
+
+## Installation
+
+<Tabs queryString="type">
+    <TabItem value="spigot" label="Paper" default>
+        1. Download and install Retention, which can be found on the resource page, into your plugins folder.<br/>
+        2. Start your server and wait until it finishes booting up, once finished, stop your server.<br/>
+        3. Open loader.yml in Retention's plugin folder and enable Bolt, save and reboot.<br/>
+        4. Enter your mongo details in Bolt's database.yml, reboot, and Bolt should be ready.<br/>
+    </TabItem>
+</Tabs>
+
+## FAQ
+
+<details>
+<summary>My server runs out of ram on startup.</summary>
+
+It is recommended to allocate as much memory you can to the server
+in accordance with the amount of chunks/arenas you have.
+
+Alternatively, you can disable `PRE-LOAD-CHUNKS` in your `settings.yml`. If you are using 'CHUNK' or 'VANLLA'
+reset type, then turn on 'CLEAR-CHUNK-DATA-AFTER-RESET' to reduce memory usage.
+</details>
+
+<details>
+<summary>Players take damage in the sumo event.</summary>
+
+Make sure you set the build height of the event above the arena.
+</details>
