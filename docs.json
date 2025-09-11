@@ -17,8 +17,8 @@
             "group": "Phoenix",
             "pages": [
               "Introduction.mdx",
-              "Permissions",
-              "Placeholders"
+              "Permissions.mdx",
+              "Placeholders.mdx"
             ]
           },
           {
