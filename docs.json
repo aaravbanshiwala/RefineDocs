@@ -14,11 +14,11 @@
         "tab": "Plugin Docs",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Phoenix",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "Introduction",
+              "Permissions",
+              "Placeholders"
             ]
           },
           {
