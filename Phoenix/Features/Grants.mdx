@@ -1,5 +1,6 @@
 ---
-sidebar_position: 1
+sidebar_position: "1"
+title: "Grants"
 ---
 
 A grant adds a rank to player for a set duration, which is determined as the grant is created. The duration can be permanent or temporary.
@@ -17,17 +18,17 @@ Permission: `core.command.grant`
 You need a permission to grant each rank, for example: `core.grant.vip` which grants the vip rank. You can use `core.grant.*` to allow all ranks.
 
 <details>
-<summary>Screenshots</summary>
+  <summary>Screenshots</summary>
 
-![Rank](./assets/grant-menu/rank.png)
+  ![Rank](./assets/grant-menu/rank.png)
 
-![Scope](./assets/grant-menu/scopes.png)
+  ![Scope](./assets/grant-menu/scopes.png)
 
-![Duration](./assets/grant-menu/duration.png)
+  ![Duration](./assets/grant-menu/duration.png)
 
-![Reason](./assets/grant-menu/reason.png)
+  ![Reason](./assets/grant-menu/reason.png)
 
-![Confirm](./assets/grant-menu/confirm.png)
+  ![Confirm](./assets/grant-menu/confirm.png)
 </details>
 
 ## Grants Menu
@@ -39,9 +40,9 @@ Permission: `core.command.grants`
 The same permission to grant a rank allows you to remove a grant, see above.
 
 <details>
-<summary>Screenshot</summary>
+  <summary>Screenshot</summary>
 
-![Menu](./assets/grants-menu.png)
+  ![Menu](./assets/grants-menu.png)
 </details>
 
 ## Grant History Menu
@@ -50,20 +51,18 @@ The grant history menu lists all grants a staff member has created.
 
 Permission: `core.command.granthistory`
 
-<details>
-<summary>Screenshot</summary>
-
-![Menu](./assets/granthistory-menu.png)
-</details>
+<Accordion title="Screenshot">
+  ![Menu](./assets/granthistory-menu.png)
+</Accordion>
 
 ## Commands
 
 `<>` = Required `[]` = Optional
 
-Command                                               | Permission                  | Description
------------------------------------------------------ | --------------------------- | -----------------------------
-`/grant <player>`                                     | `core.command.grant`        | Opens the grant menu.
-`/grants <player>`                                    | `core.command.grants`       | Opens the grants menu.
-`/granthistory <player>`                              | `core.command.granthistory` | Opens the grant history menu.
-`/ogrant <player> <rank> <duration> <scope> <reason>` | Console Only                | Creates a grant for a player.
-`/rgrant <player> <rank> <reason>`                    | Console Only                | Removes grants for a player.
+| Command                                               | Permission                  | Description                   |
+| ----------------------------------------------------- | --------------------------- | ----------------------------- |
+| `/grant <player>`                                     | `core.command.grant`        | Opens the grant menu.         |
+| `/grants <player>`                                    | `core.command.grants`       | Opens the grants menu.        |
+| `/granthistory <player>`                              | `core.command.granthistory` | Opens the grant history menu. |
+| `/ogrant <player> <rank> <duration> <scope> <reason>` | Console Only                | Creates a grant for a player. |
+| `/rgrant <player> <rank> <reason>`                    | Console Only                | Removes grants for a player.  |
