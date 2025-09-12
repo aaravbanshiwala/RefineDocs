@@ -17,15 +17,15 @@
             "group": "Phoenix",
             "pages": [
               "Phoenix/Introduction",
-              "Permissions",
-              "Placeholders"
+              "Phoenix/Permissions",
+              "Phoenix/Placeholders"
             ]
           },
           {
             "group": "CarbonSpigot",
             "pages": [
               "essentials/settings",
-              "essentials/navigation"
+              "CarbonSpigot/navigation"
             ]
           },
           {
